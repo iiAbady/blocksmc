@@ -1,0 +1,27 @@
+{
+  "name": "blocksmc",
+  "version": "1.0.0",
+  "description": "BlocksMC Scraper & Wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "keywords": [
+    "scraper",
+    "blocksmc",
+    "blocksmc server"
+  ],
+  "author": "Abady <gamersspeaks@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-aqua": "^4.4.1"
+  },
+  "eslintConfig": {
+    "extends": "aqua/node"
+  }
+}
