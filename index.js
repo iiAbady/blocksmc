@@ -30,4 +30,6 @@ async function player(username) {
 }
 
 
-module.exports = player;
+module.exports = {
+	player
+};
