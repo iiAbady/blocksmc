@@ -3,7 +3,7 @@ A simple scraper & wrapper for BlocksMC!
 
 ## Instalation
 ```
-npm i node-myanimelist
+npm i blocksmc
 ```
 
 ## Example Usage
