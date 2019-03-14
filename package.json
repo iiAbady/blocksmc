@@ -1,7 +1,7 @@
 {
   "name": "blocksmc",
   "version": "1.0.2",
-  "description": "BlocksMC Scraper & Wrapper",
+  "description": "BlocksMC Scrapper & Wrapper",
   "main": "index.js",
   "scripts": {
     "test": "eslint ."
