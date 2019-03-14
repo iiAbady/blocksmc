@@ -1,6 +1,6 @@
 {
   "name": "blocksmc",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "BlocksMC Scraper & Wrapper",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,13 @@
   },
   "eslintConfig": {
     "extends": "aqua/node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PolyMagic/node-myanimelist.git"
+  },
+  "homepage": "https://github.com/Abady321x123/blocksmc#readme",
+  "bugs": {
+    "url": "https://github.com/Abady321x123/blocksmc/issues"
   }
 }
