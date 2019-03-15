@@ -1,6 +1,6 @@
 {
   "name": "blocksmc",
-  "version": "1.1.2",
+  "version": "1.2.2",
   "description": "BlocksMC Scrapper & Wrapper",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PolyMagic/node-myanimelist.git"
+    "url": "https://github.com/Abady321x123/blocksmc.git"
   },
   "homepage": "https://github.com/Abady321x123/blocksmc#readme",
   "bugs": {
