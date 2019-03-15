@@ -9,9 +9,14 @@ npm i blocksmc
 ## Example Usage
 ```js
 const blocksmc = require('blocksmc');
+
 blocksmc.player('iAbady').then(player => {
-    console.log(player.game.map(g => `${g.game} ${g.stats.deaths}`))
+    console.log(player.game.map(g => `${g.game} ${g.stats.Deaths}`))
 });
+
+blocksmc.top('sky-wars').then(leader => {
+    console.log(leader);
+})
 ```
 
 ## Response Example
@@ -37,3 +42,9 @@ player(username) --->
      Goals?: number,
  }
 }]
+```
+
+### `TOP`
+```js
+top(game) ---> Array
+```

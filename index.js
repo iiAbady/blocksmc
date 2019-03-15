@@ -29,7 +29,25 @@ async function player(username) {
 	return data;
 }
 
+/**
+ * Gets the leaderboard for a specific game.
+ * @param {string} game Game name on BlocksMC
+ * @returns {Promise} Data
+ * @async
+ */
+async function top(game) {
+	if (!game) throw new Error('[BlocksMC] Please define the game you want me to get the leaderboard from');
+	const data = [];
+	const res = await fetch(`https://blocksmc.com/${encodeURIComponent(game)}`);
+	const rawData = await res.text();
+	const $ = cheerio.load(rawData);
+	$('tbody').find('a').each(function() {
+		data.push($(this).text());
+	});
+	return data;
+}
 
 module.exports = {
-	player
+	player,
+	top
 };
