@@ -15,6 +15,9 @@ async function player(username) {
 	const res = await fetch(`https://blocksmc.com/player/${encodeURIComponent(username)}`);
 	const rawData = await res.text();
 	const $ = cheerio.load(rawData);
+	const rank = $('.profile-rank').text().replace('\n', '')
+	  .trim();
+	if (rank) data.push({ rank });
 	$('div.col-xl-4').each(function() {
 		const stats = {};
 		$(this).find('li').each(function() {
