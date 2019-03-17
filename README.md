@@ -24,24 +24,26 @@ blocksmc.top('sky-wars').then(leader => {
 ### `Player`
 ```js
 player(username) --> 
-[{
- game: string,
+[
+  {
+ game: String,
  stats: {
-     Points: number,
-     Wins: number,
-     Played: number,
-     Eggs?: number,
-     Blocks?: number,
-     Kills?: number,
-     FireWorks?: number,
-     Crates?: number,
-     DMs?: number,
-     Sponges?: number,
-     Beds?: number,
-     Rounds?: number,
-     Goals?: number,
+     Points: Number,
+     Wins: Number,
+     Played: Number,
+     Eggs?: Number,
+     Blocks?: Number,
+     Kills?: Number,
+     FireWorks?: Number,
+     Crates?: Number,
+     DMs?: Number,
+     Sponges?: Number,
+     Beds?: Number,
+     Rounds?: Number,
+     Goals?: Number,
  }
-}]
+  }
+]
 ```
 
 ### `TOP`
