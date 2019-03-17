@@ -1,3 +1,8 @@
+[![npm](https://img.shields.io/npm/v/blocksmc.svg)](https://www.npmjs.com/package/blocksmc)
+[![npm](https://img.shields.io/npm/dt/blocksmc?maxAge=3600)](https://www.npmjs.com/package/blocksmc)
+[![install size](https://packagephobia.now.sh/badge?p=blocksmc)](https://packagephobia.now.sh/result?p=blocksmc)
+
+
 # BlocksMC 
 A simple scraper & wrapper for BlocksMC!
 
