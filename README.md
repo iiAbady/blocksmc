@@ -23,7 +23,7 @@ blocksmc.top('sky-wars').then(leader => {
 
 ### `Player`
 ```js
-player(username) ---> 
+player(username) --> 
 [{
  game: string,
  stats: {
