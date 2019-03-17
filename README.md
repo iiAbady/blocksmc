@@ -1,6 +1,7 @@
 [![npm](https://img.shields.io/npm/v/blocksmc.svg)](https://www.npmjs.com/package/blocksmc)
 [![install size](https://packagephobia.now.sh/badge?p=blocksmc)](https://packagephobia.now.sh/result?p=blocksmc)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/blocksmc.svg)
+[![Build Status](https://travis-ci.org/Abady321x123/blocksmc.svg?branch=master)](https://travis-ci.org/Abady321x123/blocksmc)
 
 
 [![NPM](https://nodei.co/npm/blocksmc.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/blocksmc/)
