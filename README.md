@@ -20,7 +20,8 @@ npm i blocksmc
 const blocksmc = require('blocksmc');
 
 blocksmc.player('iAbady').then(player => {
-    console.log(player.game.map(g => `${g.game} ${g.stats.Deaths}`))
+    console.log(player.games.map(g => `${g.game} ${g.stats.Deaths}`))
+    console.log(player.rank)
 });
 
 blocksmc.top('sky-wars').then(leader => {
@@ -58,5 +59,5 @@ games: [
 
 ### `TOP`
 ```js
-top(game) ---> Array
+top(game) --> Array
 ```
