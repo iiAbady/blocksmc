@@ -34,7 +34,7 @@ blocksmc.top('sky-wars').then(leader => {
 ```js
 player(username) --> 
 rank: String,
-[
+games: [
   {
  game: String,
  stats: {
