@@ -17,7 +17,10 @@ async function player(username) {
 	const $ = cheerio.load(rawData);
 	const rank = $('.profile-rank').text().replace('\n', '')
 	  .trim();
+	const timePlayed = $('h1[dir=ltr]').text().replace('\n', '')
+		.trim();
 	if (rank) Object.assign(data, { rank });
+	if (timePlayed) Object.assign(data, { timePlayed });
 	$('div.col-xl-4').each(function() {
 		const stats = {};
 		$(this).find('li').each(function() {

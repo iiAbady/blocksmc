@@ -22,6 +22,7 @@ const blocksmc = require('blocksmc');
 blocksmc.player('iAbady').then(player => {
     console.log(player.games.map(g => `${g.game} ${g.stats.Deaths}`))
     console.log(player.rank)
+    console.log(player.timePlayed)
 });
 
 blocksmc.top('sky-wars').then(leader => {
@@ -35,6 +36,7 @@ blocksmc.top('sky-wars').then(leader => {
 ```js
 player(username) --> 
 rank: String,
+timePlayed: String,
 games: [
   {
  game: String,
