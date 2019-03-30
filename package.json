@@ -1,35 +1,34 @@
 {
   "name": "blocksmc",
-  "version": "2.4.3",
+  "version": "2.9.3",
   "description": "BlocksMC Scrapper & Wrapper",
-  "main": "index.js",
-  "scripts": {
-    "test": "eslint ."
-  },
-  "keywords": [
-    "scraper",
-    "blocksmc",
-    "blocksmc server"
-  ],
+  "main": "dist/src/index.js",
+  "types": "typings/index.d.ts",
+  "repository": "https://github.com/Abady321x123/blocksmc",
   "author": "Abady <gamersspeaks@gmail.com>",
   "license": "Apache-2.0",
+  "private": false,
+  "keywords": [
+    "scrapper",
+    "blocksmc",
+    "minecraft"
+  ],
+  "homepage": "https://github.com/Abady321x123/blocksmc#readme",
+  "bugs": {
+    "url": "https://github.com/Abady321x123/blocksmc/issues"
+  },
+  "scripts": {
+    "prepare": "rimraf typings dist && tsc"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^5.15.1",
-    "eslint-config-aqua": "^4.4.1"
-  },
-  "eslintConfig": {
-    "extends": "aqua/node"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Abady321x123/blocksmc.git"
-  },
-  "homepage": "https://github.com/Abady321x123/blocksmc#readme",
-  "bugs": {
-    "url": "https://github.com/Abady321x123/blocksmc/issues"
+    "@types/cheerio": "^0.22.11",
+    "@types/node-fetch": "^2.1.7",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.4.1"
   }
 }
