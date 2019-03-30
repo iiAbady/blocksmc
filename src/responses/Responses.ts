@@ -16,6 +16,7 @@ export interface Stat {
 	Points: string;
 	Wins: string;
 	Played: string;
+	Deaths?: string;
 	Eggs?: string;
 	Blocks?: string;
 	Kills?: string;
