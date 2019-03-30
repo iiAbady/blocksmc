@@ -17,7 +17,8 @@ npm i blocksmc
 
 ## Example Usage
 ```js
-const blocksmc = require('blocksmc');
+const { Blocks } = require('blocksmc');
+const blocks = new Blocks();
 
 blocksmc.player('iAbady').then(player => {
     console.log(player.games.map(g => `${g.game} ${g.stats.Deaths}`))
