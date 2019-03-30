@@ -8,7 +8,7 @@ type DataOptions = {
 		game?: string | undefined
 };
 
-export default abstract class Blocks {
+export default class Blocks {
 		public async player(username: string): Promise<Player> {
 				if (typeof username !== 'string') throw new TypeError(`[BlocksMC] expected string on username, got ${typeof username}`);
 				return this._getData({type: 'player', username});
