@@ -18,8 +18,10 @@
     "url": "https://github.com/Abady321x123/blocksmc/issues"
   },
   "scripts": {
-    "prepare": "rimraf typings dist && tsc",
-    "test": "tslint -p tsconfig.json"
+    "prebuild": "yarn test",
+    "build": "gulp",
+    "test": "tslint -p tsconfig.json",
+    "start:dev": "gulp && node --trace-warnings tests/test.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
@@ -28,7 +30,11 @@
   "devDependencies": {
     "@types/cheerio": "^0.22.11",
     "@types/node-fetch": "^2.1.7",
-    "rimraf": "^2.6.3",
+    "fs-nextra": "^0.4.5",
+    "gulp": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "merge2": "^1.2.3",
     "tslint": "^5.14.0",
     "typescript": "^3.4.1"
   }
