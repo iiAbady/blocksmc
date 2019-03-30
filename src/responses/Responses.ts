@@ -9,7 +9,7 @@ export interface Player {
 
 export interface Game {
 	game: string;
-	stats: Array<Stat>;
+	stats: Stat;
 }
 
 export interface Stat {
