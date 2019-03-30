@@ -9,3 +9,7 @@ logs/
 # Miscellaneous
 .tmp/
 .vscode/
+
+#TS
+dist/
+typings/
