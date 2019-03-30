@@ -8,7 +8,7 @@ jobs:
   include:
      - stage: deploy
      node_js: 10
-     script: yarn prepare
+     script: yarn prepare && yarn test
 cache:
   yarn: true
   directories:
