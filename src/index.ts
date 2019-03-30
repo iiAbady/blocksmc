@@ -1,5 +1,5 @@
-import { Blocks } from './structures/Blocks';
-const { version } = require('../package.json');
+import Blocks from './structures/Blocks';
+const { version }: { version: string } = require('../package.json');
 
 export default Blocks;
 

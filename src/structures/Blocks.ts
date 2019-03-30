@@ -2,14 +2,13 @@ import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 import { Player, Game } from '../responses/Responses';
 
-// tslint:disable-next-line: interface-over-type-literal
 type DataOptions = {
 		type: 'player' | 'top',
 		username?: string | undefined,
 		game?: string | undefined
 };
 
-export class Blocks {
+export default abstract class Blocks {
 		public async player(username: string): Promise<Player> {
 				if (typeof username !== 'string') throw new TypeError(`[BlocksMC] expected string on username, got ${typeof username}`);
 				return this._getData({type: 'player', username});
