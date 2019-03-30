@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import { Player, Game } from '../responses/Responses';
 
 // tslint:disable-next-line: interface-over-type-literal

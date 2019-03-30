@@ -2,7 +2,7 @@
   "name": "blocksmc",
   "version": "2.9.3",
   "description": "BlocksMC Scrapper & Wrapper",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "types": "typings/index.d.ts",
   "repository": "https://github.com/Abady321x123/blocksmc",
   "author": "Abady <gamersspeaks@gmail.com>",
