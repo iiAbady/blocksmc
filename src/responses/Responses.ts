@@ -1,11 +1,11 @@
-// tslint:disable-next-line: interface-over-type-literal
-export type Player = {
-	rank: string,
-	timePlayed: string,
-	games: Array<Game>
-};
-
 export type TOP = Array<string>;
+
+export interface Player {
+	rank: string;
+	timePlayed: string;
+	games: Array<Game>;
+}
+
 
 export interface Game {
 	game: string;
