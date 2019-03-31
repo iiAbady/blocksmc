@@ -1,4 +1,5 @@
-const { Blocks } = require('../dist');
+const { Blocks, version } = require('../dist');
+console.log(version)
 const blocks = new Blocks();
 blocks.player('iAbady').then(player => {
     console.log(player.games.map(m => m.stats));

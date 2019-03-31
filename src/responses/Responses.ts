@@ -6,12 +6,6 @@ export interface Player {
 	games: Array<Game>;
 }
 
-
-export interface Game {
-	game: string;
-	stats: Stat;
-}
-
 export interface Stat {
 	Points: string;
 	Wins: string;
@@ -27,4 +21,9 @@ export interface Stat {
 	Beds?: string;
 	Rounds?: string;
 	Goals?: string;
+}
+
+interface Game {
+	game: string;
+	stats: Stat;
 }
