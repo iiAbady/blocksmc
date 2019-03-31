@@ -1,10 +1,9 @@
 language: node_js
 node_js:
-  - 8
   - 10
   - 11
 install: yarn install
-script: yarn test && yarn prepare
+script: yarn build && yarn test
 cache:
   yarn: true
   directories:
