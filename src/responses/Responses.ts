@@ -1,6 +1,7 @@
 export type TOP = Array<string>;
 
 export interface Player {
+	name: string;
 	rank: string;
 	timePlayed: string;
 	games: Array<Game>;

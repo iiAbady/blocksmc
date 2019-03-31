@@ -29,8 +29,10 @@ export default class Blocks {
 							.trim();
 						const timePlayed = $('h1[dir=ltr]').text().replace('\n', '')
 								.trim();
-						if (rank) Object.assign(data, { rank });
-						if (timePlayed) Object.assign(data, { timePlayed });
+						const name = $('.profile-header h1').text().trim();
+						Object.assign(data, { name });
+						Object.assign(data, { rank });
+						Object.assign(data, { timePlayed });
 						$('div.col-xl-4').each(function(this: any) {
 								const stats = {};
 								$(this).find('li').each(function(this: any) {

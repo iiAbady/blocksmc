@@ -1,10 +1,5 @@
-const { Blocks, version } = require('../dist');
-console.log(version)
+const { Blocks } = require('../dist');
 const blocks = new Blocks();
 blocks.player('iAbady').then(player => {
-    console.log(player.games.map(m => m.stats));
+    console.log(player.name)
 });
-
-blocks.top('sky-wars').then(leader => {
-    console.log(leader.map(m => m));
-})
