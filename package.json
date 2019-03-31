@@ -1,6 +1,6 @@
 {
   "name": "blocksmc",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "BlocksMC Scrapper & Wrapper",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
