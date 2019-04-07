@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
-import { Player, TOP } from '../responses/Responses';
+import { Player, Top } from '../responses/Responses';
 
 type DataOptions = {
 		type: 'player' | 'top',
@@ -14,8 +14,8 @@ export default class Blocks {
 				return this._getData({type: 'player', username});
 				}
 
-		public async top(game: string): Promise<TOP> {
-				if (typeof game !== 'string') throw new TypeError(`[BlocksMC] expected string on username, got ${typeof game}`);
+		public async top(game: string): Promise<Top> {
+				if (typeof game !== 'string') throw new TypeError(`[BlocksMC] expected string on game, got ${typeof game}`);
 				return this._getData({ type: 'top', game });
 				}
 

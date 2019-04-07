@@ -1,4 +1,4 @@
-export type TOP = Array<string>;
+export type Top = Array<string>;
 
 export interface Player {
 	name: string;
@@ -7,7 +7,7 @@ export interface Player {
 	games: Array<Game>;
 }
 
-export interface Stat {
+interface Stat {
 	Points: string;
 	Wins: string;
 	Played: string;
