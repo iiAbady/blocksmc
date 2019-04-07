@@ -20,7 +20,7 @@
   "scripts": {
     "prepublishOnly": "yarn build",
     "prebuild": "yarn test",
-    "prepare": "yarn build",
+    "preinstall": "yarn build",
     "build": "gulp",
     "test": "tslint -p tsconfig.json",
     "start:dev": "gulp && node --trace-warnings tests/test.js"
