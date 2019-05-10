@@ -11,8 +11,10 @@
 A simple scraper & wrapper for BlocksMC!
 
 ## Instalation
-```
+```js
 npm i blocksmc
+# or
+yarn add blocksmc
 ```
 
 ## Example Usage
