@@ -22,7 +22,7 @@
     "prebuild": "yarn test",
     "build": "gulp",
     "test": "eslint src --ext .ts",
-    "dev": "gulp && node --trace-warnings tests/test.js"
+    "dev": "node --trace-warnings tests/test.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
