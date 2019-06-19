@@ -12,7 +12,12 @@
     "sourceMap": true,
     "removeComments": false,
     "outDir": "./dist/",
-    "declarationDir": "./typings/"
+    "declarationDir": "./typings/",
+    "experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"alwaysStrict": true,
+		"allowSyntheticDefaultImports": true,
+		"pretty": true
   },
   "include": [
     "./src/"
