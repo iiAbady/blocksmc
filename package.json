@@ -25,16 +25,16 @@
     "dev": "node --trace-warnings tests/test.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "node-fetch": "^2.3.0"
+    "cheerio": "^1.0.0-rc.3",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.11",
-    "@types/node-fetch": "^2.1.7",
+    "@types/node-fetch": "^2.3.7",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
     "eslint": "^5.16.0",
-    "eslint-config-marine": "^2.2.0",
+    "eslint-config-marine": "^3.0.2",
     "fs-nextra": "^0.4.5",
     "gulp": "^4.0.0",
     "gulp-sourcemaps": "^2.6.5",
@@ -42,7 +42,7 @@
     "merge2": "^1.2.3",
     "typescript": "^3.4.1"
   },
-  	"eslintConfig": {
-		"extends": "marine/node"
-	}
+  "eslintConfig": {
+    "extends": "marine/node"
+  }
 }
