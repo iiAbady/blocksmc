@@ -51,7 +51,8 @@ export default class Blocks {
 
 		if (options.type === 'top') {
 			const data: any = [];
-			const res = await fetch(`https://blocksmc.com/${options.game}`);
+			const res = await fetch(`https://blocksmc.com/${options.game!.toLowerCase().split(' ').join('-')
+				.trim()}`);
 			const rawData = await res.text();
 			const $ = cheerio.load(rawData);
 			// eslint-disable-next-line func-names
