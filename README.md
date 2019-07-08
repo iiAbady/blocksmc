@@ -13,7 +13,7 @@ A simple scraper & wrapper for BlocksMC!
 ## Instalation
 ```js
 npm i blocksmc
-# or
+// or
 yarn add blocksmc
 ```
 
