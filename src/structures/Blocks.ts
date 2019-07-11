@@ -4,8 +4,8 @@ import { Player, Top } from '../responses/Responses';
 
 interface DataOptions {
 	type: 'player' | 'top';
-	username?: string | undefined;
-	game?: string | undefined;
+	username?: string;
+	game?: string;
 }
 
 export default class Blocks {
@@ -25,14 +25,12 @@ export default class Blocks {
 			const res = await fetch(`https://blocksmc.com/player/${options.username}`);
 			const rawData = await res.text();
 			const $ = cheerio.load(rawData);
+			const name = $('.profile-header h1').text().trim();
 			const rank = $('.profile-rank').text().replace('\n', '')
 				.trim();
 			const timePlayed = $('h1[dir=ltr]').text().replace('\n', '')
 				.trim();
-			const name = $('.profile-header h1').text().trim();
-			Object.assign(data, { name });
-			Object.assign(data, { rank });
-			Object.assign(data, { timePlayed });
+			Object.assign(data, { name, rank, timePlayed });
 			// eslint-disable-next-line func-names
 			$('div.col-xl-4').each(function(this: any) {
 				const stats = {};
