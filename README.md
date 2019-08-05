@@ -22,13 +22,13 @@ yarn add blocksmc
 const { Blocks } = require('blocksmc');
 const blocks = new Blocks();
 
-blocksmc.player('iAbady').then(player => {
+blocks.player('iAbady').then(player => {
     console.log(player.games.map(g => `${g.game} ${g.stats.Deaths}`))
     console.log(player.rank)
     console.log(player.timePlayed)
 });
 
-blocksmc.top('sky-wars').then(leader => {
+blocks.top('sky-wars').then(leader => {
     console.log(leader);
 })
 ```
