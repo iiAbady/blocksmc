@@ -5,5 +5,5 @@ node_modules/
 .env
 tsconfig.json
 gulpfile.js
-webpack.config.js
 .travis.yml
+dist/**/*.map
