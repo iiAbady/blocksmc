@@ -2,7 +2,7 @@ name: Lint
 on: [push, pull_request]
 jobs:
   eslint:
-    name: ESLint
+    name: Test on Node v${{ matrix.node }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
-      - name: Install Node v${{ matrix.node }}
+      - name: Install Node
         uses: actions/setup-node@v1
         with:
           node-version:  ${{ matrix.node }}
@@ -27,4 +27,6 @@ jobs:
           job-name: ESLint
       
       - name: Test package
-        run: yarn test
+        run: |
+          yarn build
+          yarn test
