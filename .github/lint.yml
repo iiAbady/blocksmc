@@ -1,0 +1,27 @@
+name: Lint
+on: [push, pull_request]
+jobs:
+  eslint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['12', '11', '10']
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Install Node v${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version:  ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run ESLint
+        uses: icrawl/action-eslint@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          job-name: ESLint
