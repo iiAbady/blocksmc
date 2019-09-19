@@ -25,3 +25,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           job-name: ESLint
+      
+      - name: Test package
+        run: yarn test
