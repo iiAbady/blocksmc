@@ -1,48 +1,42 @@
 {
-  "name": "blocksmc",
-  "version": "3.6.4",
-  "description": "BlocksMC Scrapper & Wrapper",
-  "main": "dist/index.js",
-  "types": "typings/index.d.ts",
-  "repository": "https://github.com/Abady321x123/blocksmc",
-  "author": "Abady <gamersspeaks@gmail.com>",
-  "license": "Apache-2.0",
-  "private": false,
-  "keywords": [
-    "scrapper",
-    "blocksmc",
-    "minecraft"
-  ],
-  "homepage": "https://github.com/Abady321x123/blocksmc#readme",
-  "bugs": {
-    "url": "https://github.com/Abady321x123/blocksmc/issues"
-  },
-  "scripts": {
-    "prepublishOnly": "yarn build",
-    "prebuild": "yarn test",
-    "build": "gulp",
-    "test": "eslint src --ext .ts",
-    "dev": "node --trace-warnings tests/test.js"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {
-    "@types/cheerio": "^0.22.11",
-    "@types/node-fetch": "^2.3.7",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "eslint": "^6.2.1",
-    "eslint-config-marine": "^5.0.0",
-    "fs-nextra": "^0.4.5",
-    "gulp": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-typescript": "^5.0.1",
-    "merge2": "^1.2.3",
-    "typescript": "^3.5.2"
-  },
-  "eslintConfig": {
-    "extends": "marine/node"
-  }
+	"name": "blocksmc",
+	"version": "3.6.4",
+	"description": "BlocksMC Scrapper & Wrapper",
+	"main": "dist/index.js",
+	"types": "typings/index.d.ts",
+	"repository": "https://github.com/Abady321x123/blocksmc",
+	"author": "Abady <gamersspeaks@gmail.com>",
+	"license": "Apache-2.0",
+	"private": false,
+	"keywords": [
+		"scrapper",
+		"blocksmc",
+		"minecraft"
+	],
+	"homepage": "https://github.com/Abady321x123/blocksmc#readme",
+	"bugs": {
+		"url": "https://github.com/Abady321x123/blocksmc/issues"
+	},
+	"scripts": {
+		"prepublishOnly": "yarn build",
+		"build": "tsc",
+		"lint": "eslint src --ext .ts",
+		"test": "node --trace-warnings tests/test.js"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3",
+		"node-fetch": "^2.6.0"
+	},
+	"devDependencies": {
+		"@types/cheerio": "^0.22.11",
+		"@types/node-fetch": "^2.3.7",
+		"@typescript-eslint/eslint-plugin": "^2.0.0",
+		"@typescript-eslint/parser": "^2.0.0",
+		"eslint": "^6.2.1",
+		"eslint-config-marine": "^5.0.0",
+		"typescript": "^3.5.2"
+	},
+	"eslintConfig": {
+		"extends": "marine/node"
+	}
 }
