@@ -1,8 +1,8 @@
-name: Lint
+name: Test
 on: [push, pull_request]
 jobs:
-  eslint:
-    name: Test on Node v${{ matrix.node }}
+  test:
+    name: Node v${{ matrix.node }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
