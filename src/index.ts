@@ -6,4 +6,3 @@ export default Blocks;
 export {
 	Blocks, version
 };
-
