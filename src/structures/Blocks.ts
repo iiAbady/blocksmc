@@ -49,12 +49,15 @@ export default class Blocks {
 
 		if (options.type === 'top') {
 			const res = await fetch(`https://blocksmc.com/${options.game!.toLowerCase()
-						.split(' ').
-						join('-')
-						.trim()}`);
+				.split(' ')
+				.join('-')
+				.trim()}`);
 			const rawData = await res.text();
 			const $ = cheerio.load(rawData);
-			const statsColumn = $('body > div.container > table > thead > tr').text().trim().replace(/[\n\r]+/g, '').split(/ +/g);
+			const statsColumn = $('body > div.container > table > thead > tr').text()
+				.trim()
+				.replace(/[\n\r]+/g, '')
+				.split(/ +/g);
 			const topArray = $('body > div.container > table > tbody > tr ').map(element => {
 				const column = $(element).find('td');
 				const userData = {};
