@@ -48,16 +48,27 @@ export default class Blocks {
 		}
 
 		if (options.type === 'top') {
-			const data: any = [];
-			const res = await fetch(`https://blocksmc.com/${options.game!.toLowerCase().split(' ').join('-')
+			const res = await fetch(`https://blocksmc.com/${options.game!.toLowerCase()
+				.split(' ')
+				.join('-')
 				.trim()}`);
 			const rawData = await res.text();
 			const $ = cheerio.load(rawData);
-			// eslint-disable-next-line func-names
-			$('tbody').find('a').each(function(this: any) {
-				data.push($(this).text());
-			});
-			return data;
+			const statsColumn = $('body > div.container > table > thead > tr').text()
+				.trim()
+				.replace(/[\n\r]+/g, '')
+				.split(/ +/g);
+			const topArray = $('body > div.container > table > tbody > tr ').map(element => {
+				const column = $(element).find('td');
+				const userData = {};
+				column.each((i, x) => userData[statsColumn[i]] = $(x).text());
+				delete userData[statsColumn[1]];// av column no need for it.
+				return userData;
+			}).toArray();
+			delete statsColumn[1];// av column no need for it.
+			const top = {};
+			topArray.forEach((i, e) => top[statsColumn[i]] = e);
+			return top;
 		}
 	}
 }
