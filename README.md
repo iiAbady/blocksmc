@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/blocksmc.svg)](https://www.npmjs.com/package/blocksmc)
 [![install size](https://packagephobia.now.sh/badge?p=blocksmc)](https://packagephobia.now.sh/result?p=blocksmc)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/blocksmc.svg)
-![badge](https://github.com/Abady321x123/blocksmc/workflows/Test/badge.svg)
+![badge](https://github.com/iiAbady/blocksmc/workflows/Test/badge.svg)
 
 </div>
 

@@ -4,7 +4,7 @@
 	"description": "BlocksMC Scrapper & Wrapper",
 	"main": "dist/index.js",
 	"types": "typings/index.d.ts",
-	"repository": "https://github.com/Abady321x123/blocksmc",
+	"repository": "https://github.com/iiAbady/blocksmc",
 	"author": "Abady <gamersspeaks@gmail.com>",
 	"license": "Apache-2.0",
 	"private": false,
@@ -13,9 +13,9 @@
 		"blocksmc",
 		"minecraft"
 	],
-	"homepage": "https://github.com/Abady321x123/blocksmc#readme",
+	"homepage": "https://github.com/iiAbady/blocksmc#readme",
 	"bugs": {
-		"url": "https://github.com/Abady321x123/blocksmc/issues"
+		"url": "https://github.com/iiAbady/blocksmc/issues"
 	},
 	"scripts": {
 		"prepublishOnly": "yarn build",
