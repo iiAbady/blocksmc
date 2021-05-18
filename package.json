@@ -33,7 +33,7 @@
 		"@typescript-eslint/eslint-plugin": "^2.0.0",
 		"@typescript-eslint/parser": "^2.0.0",
 		"eslint": "^6.2.1",
-		"eslint-config-marine": "^6.0.0",
+		"eslint-config-marine": "^9.0.6",
 		"typescript": "^4.2.3"
 	},
 	"eslintConfig": {
