@@ -1,9 +1,14 @@
-const { Blocks } = require('../dist');
-const blocks = new Blocks();
-blocks.player('iAbady').then(player => {
-	console.log(player.name);
-});
+const { Blocks } = require('../package.json');
+console.log(Blocks)
+// const blocks = new Blocks();
 
-blocks.top('Sky Wars').then(leader => {
-	console.log(leader)
-})
+// // eslint-disable-next-line arrow-parens
+// blocks.player('iAbady',).then((player,) => {
+// 	console.log(player,);
+// },);
+
+
+// // eslint-disable-next-line arrow-parens
+// blocks.top('sky-wars',).then((leader,) => {
+// 	console.log(leader,);
+// },);
